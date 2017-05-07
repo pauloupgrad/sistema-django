@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def home(request):
+	var = 'Mundo'
+	return render(request,'core/base.html', {'var':var})
