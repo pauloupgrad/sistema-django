@@ -1,0 +1,160 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+{%block title%}Cadastrar novo Usuario{%endblock%}
+{%block main%}
+<div class="row">
+
+	<form method="POST">
+
+
+	<div class="col-md-8">
+	    <div class="card">
+	        <div class="header">
+	            <h4 class="title">Cadastrar Usuário</h4>
+	        </div>
+	        <div class="content">
+	            
+	                <div class="row">
+	                    <div class="col-md-6">
+	                        <div class="form-group">
+	                            <label>Nome</label>
+	                            <input type="text" name="nome" class="form-control" placeholder="Digite seu nome" value="Digite seu nome">
+	                        </div>
+	                    </div>
+	                    <div class="col-md-6">
+	                        <div class="form-group">
+	                            <label>Sobre nome</label>
+	                            <input type="text" name="sobrenome" class="form-control" placeholder="Digite sobre nome" value="Digite sobre nome">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-5">
+	                        <div class="form-group">
+	                            <label>Username</label>
+	                            <input type="text" name="username" class="form-control" placeholder="Digite username" value="Digite username">
+	                        </div>
+	                    </div>
+	                    <div class="col-md-3">
+	                        <div class="form-group">
+	                            <label>Password</label>
+	                            <input type="password" name="password" class="form-control" placeholder="Digite senha" value="Digite senha">
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="form-group">
+	                            <label for="exampleInputEmail1">Email address</label>
+	                            <input type="email" name="email" class="form-control" placeholder="Email">
+	                        </div>
+	                    </div>
+	                </div>	                
+
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group">
+	                            <label>endereço</label>
+	                            <input type="text" name="endereco" class="form-control" placeholder="Ex: rua, numero, bairro" value="Ex: rua, numero, bairro">
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="row">
+	                    <div class="col-md-4">
+	                        <div class="form-group">
+	                            <label>Cidade</label>
+	                            <input type="text" name="cidade" class="form-control" placeholder="Cidade" value="Cidade">
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="form-group">
+	                            <label>Estado</label>
+	                            <input type="text" name="estado" class="form-control" placeholder="Estado" value="Estado">
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="form-group">
+	                            <label>CEP</label>
+	                            <input type="number" name="cep" class="form-control" placeholder="Digite o cep 96330-620">
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group">
+	                            <label>perfil profissional</label>
+	                            <textarea rows="5" name="perfil" class="form-control" placeholder="Digite seu perfil profissional" value="Mike"></textarea>
+	                        </div>
+	                    </div>
+	                </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="col-md-4">
+	    <div class="card card-user">
+	        <div class="header">
+	            <h4 class="title">Redes Sociais</h4>
+	        </div>
+	        <div class="content">  
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group">
+	                            <label><i class="fa fa-facebook-square"></i> facebook </label>
+	                            <input type="text" name="face" class="form-control" placeholder="Digite seu facebook" >
+	                        </div>
+	                    </div>
+	                 </div>
+	                 <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group">
+	                            <label><i class="fa fa-twitter-square"></i> Twitter </label>
+	                            <input type="text" name="twitter" class="form-control" placeholder="Digite seu twitter" >
+	                        </div>
+	                    </div>
+	                 </div>
+	                 <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group">
+	                            <label><i class="fa fa-google-plus-square"></i> google plus </label>
+	                            <input type="text" name="google" class="form-control" placeholder="Digite seu google plus" >
+	                        </div>
+	                    </div>
+	                 </div>
+	                 <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group">
+	                            <label><i class="fa fa-linkedin-square"></i> linkedin </label>
+	                            <input type="text" name="linkedin" class="form-control" placeholder="Digite seu linkedin" >
+	                        </div>
+	                    </div>
+	                 </div>
+	                 <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group">
+	                            <label><i class="fa fa-github-square"></i> github </label>
+	                            <input type="text" name="github" class="form-control" placeholder="Digite seu github" >
+	                        </div>
+	                    </div>
+	                 </div>
+	                 <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group">
+	                            <label><i class="fa fa-skype"></i> skype </label>
+	                            <input type="text" name="skype" class="form-control" placeholder="Digite seu skype" >
+	                        </div>
+	                    </div>
+	                 </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+		    <div class="well">		    
+		         <button type="submit" class="btn btn-info btn-fill pull-left">Cadastrar Redes</button>
+		        <div class="clearfix"></div>
+	        </div> 
+	    </div>	
+	</div>
+	</form>  
+</div>
+{%endblock%}				
