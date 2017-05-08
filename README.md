@@ -1,2 +1,2 @@
 # sistema-django
-Sistema de CRUD em Django
+Sistema Administrativo com CRUD em Django
