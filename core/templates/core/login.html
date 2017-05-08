@@ -1,14 +1,42 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
 	<title>Sistema Administrativo</title>
-	<link rel="stylesheet" href="">
+	 <!-- Bootstrap core CSS     -->
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" />
+	<link rel="stylesheet" href="{% static 'css/style_login.css' %}">
 </head>
 <body>
-	<h1>Deu certo!!!!</h1>
-	<p><a href="{% url 'home' %}" class="btn btn-primary">Entar no sistema</a></p>
+	 <div class="container">
+	 <div class="row">
+	 <div class="col-md-4 col-md-offset-4">
+	 <br/><br/><br/><br/><br/><br/><br/><br/>
+	      <div class="panel panel-primary">	      
+	      <div class="panel-heading">Login</div>
+		       <div class="panel-body">
+				      <form method="POST" action=""> 
+				      <div class="form-group">      
+					        <label for="inname" class="label-log">Username</label>
+					        <input type="text" name="username" id="inname" class="form-control input-lg" placeholder="username" required autofocus>
+				        </div>
+				        <div class="form-group">
+					        <label for="inPass" class="label-log">Password</label>
+					        <input type="password" name="password" id="inPass" class="form-control input-lg" placeholder="Password" required>
+				        </div>					       
+				           <button class="btn btn-lg btn-primary btn-block" type="submit">Logar</button>
+				      </form>
+		       </div>
+		       <div class="panel-footer">
+		       	<a href="{% url 'home' %}">ir para painel</a>
+		       </div>
+	     </div>
+	 </div>
+	 </div>
+    </div> <!-- /container -->
 </body>
 </html>
 
