@@ -1,0 +1,138 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+{%block main%}
+<div class="col-md-12">
+	    <div class="card">
+	        <div class="header">
+	        <div class="row">
+		        <div class="col-md-9">
+		            <h4 class="title">Para atualizar seu perfil</h4>
+		            <p>Clique no botão atualizar perfil</p>
+		         </div>
+		         <div class="col-md-3">
+		            <a href="{% url 'atualizar_perfil' %}" class="btn btn-primary btn-lg">Atualizar Perfil</a>
+		         </div>
+	         </div>
+	        </div>
+	    </div>
+</div>
+<div class="col-md-8">
+	    <div class="card">
+	        <div class="header">
+	            <h4 class="title">Cadastrar Usuário</h4>
+	        </div>
+	        <div class="content">
+	            
+	                <div class="row">
+	                    <div class="col-md-6">
+	                        <div class="form-group">
+	                            <label>Nome (disabled)</label>
+	                            <input type="text" disabled class="form-control" placeholder="Digite seu nome" value="Digite seu nome">
+	                        </div>
+	                    </div>
+	                    <div class="col-md-6">
+	                        <div class="form-group">
+	                            <label>Sobre nome (disabled)</label>
+	                            <input type="text" disabled class="form-control" placeholder="Digite sobre nome" value="Digite sobre nome">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-5">
+	                        <div class="form-group">
+	                            <label>Username (disabled)</label>
+	                            <input type="text" disabled class="form-control" placeholder="Digite username" value="Digite username">
+	                        </div>
+	                    </div>
+	                    <div class="col-md-3">
+	                        <div class="form-group">
+	                            <label>Password (disabled)</label>
+	                            <input type="password" disabled class="form-control" placeholder="Digite senha" value="Digite senha">
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="form-group">
+	                            <label for="exampleInputEmail1">Email address (disabled)</label>
+	                            <input type="email" disabled class="form-control" placeholder="Email">
+	                        </div>
+	                    </div>
+	                </div>	                
+
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group">
+	                            <label>endereço (disabled)</label>
+	                            <input type="text" disabled class="form-control" placeholder="Ex: rua, numero, bairro" value="Ex: rua, numero, bairro">
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="row">
+	                    <div class="col-md-4">
+	                        <div class="form-group">
+	                            <label>Cidade (disabled)</label>
+	                            <input type="text" disabled class="form-control" placeholder="Cidade" value="Cidade">
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="form-group">
+	                            <label>Estado (disabled)</label>
+	                            <input type="text" disabled class="form-control" placeholder="Estado" value="Estado">
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="form-group">
+	                            <label>CEP (disabled)</label>
+	                            <input type="number" disabled class="form-control" placeholder="Digite o cep 96330-620">
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group">
+	                            <label>perfil profissional (disabled)</label>
+	                            <textarea rows="5" disabled class="form-control" placeholder="Digite seu perfil profissional" value="Mike"></textarea>
+	                        </div>
+	                    </div>
+	                </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="col-md-4">
+	    <div class="card card-user">
+	        <div class="image">
+	            <img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400" alt="..."/>
+	        </div>
+	        <div class="content">
+	            <div class="author">
+	                 <a href="#">
+	                <img class="avatar border-gray" src="{% static 'assets/img/faces/pauloperfil.jpg' %}" alt="..."/>
+
+	                  <h4 class="title">Paulo F. Pineiro<br />
+	                     <small>pauloupgrad</small>
+	                  </h4>
+	                </a>
+	            </div>
+	            <p class="description text-center"> "Programador TI, Web Designer  <br>
+	                                desde 1996 trabalha em <br>
+	                                desenvolvimento de projetos Web ,  <br>
+	                                Freelancer e assessoria em <br>
+	                                marketing digital."
+	            </p>
+	        </div>
+	        <hr>
+	        <p class="description text-center">Site: <a href="https://www.webgrad.com.br" target="_blank">www.webgrad.com.br</a></p>
+	        <p class="description text-center">Pageface: <a href="https://facebook.com/webgrad" target="_blank">Webgrad no facebook</a></p>
+	        <hr>
+	        <div class="text-center">
+	            <button href="#" class="btn btn-simple"><i class="fa fa-facebook-square"></i></button>
+	            <button href="#" class="btn btn-simple"><i class="fa fa-twitter"></i></button>
+	            <button href="#" class="btn btn-simple"><i class="fa fa-google-plus-square"></i></button>
+				<button href="#" class="btn btn-simple"><i class="fa fa-github-square"></i></button>
+				<button href="#" class="btn btn-simple"><i class="fa fa-linkedin-square"></i></button>			
+	        </div>
+	    </div>
+	</div>
+</div>
+{%endblock%}				

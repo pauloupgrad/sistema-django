@@ -6,6 +6,9 @@ def login(request):
 def base(request):	
 	return render(request,'core/base.html')	
 
+def perfil(request):	
+	return render(request,'core/perfil.html')		
+
 def lista_user(request):
 	return render(request, 'core/lista-usuarios.html')
 

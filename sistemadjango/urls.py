@@ -15,13 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from core.views import login, base, lista_user, cadastrar_user, atualizar_perfil
+from core.views import login, base, perfil, lista_user, cadastrar_user, atualizar_perfil
 
 urlpatterns = [ 
 	url(r'^$', login, name='login'),   
 	url(r'^base/$', base, name='home'),
+	url(r'^perfil/$', perfil, name='perfil'),
 	url(r'^lista_user/$', lista_user, name='lista_user'),
 	url(r'^cadastrar_user/$', cadastrar_user, name='cadastrar_user'),
-	url(r'^atualizar_perfil/$', atualizar_perfil, name='perfil'),
+	url(r'^atualizar_perfil/$', atualizar_perfil, name='atualizar_perfil'),
     url(r'^admin/', admin.site.urls),
 ]
